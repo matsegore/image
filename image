@@ -1,0 +1,25 @@
+ public static void image() 
+        {
+            Console.Write("Input Height Of Image:");
+            int heightIm = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Input Width Of Image:");
+            int widthIm = Convert.ToInt32(Console.ReadLine());
+            if ((0 > heightIm) | (0 > widthIm))
+            {
+                Console.WriteLine("Image does not exist");
+            }
+            else if (heightIm < widthIm)
+            {
+                Console.WriteLine("Portrait");
+            }
+            else if (heightIm > widthIm)
+            {
+                Console.WriteLine("Landscape");
+            }
+            else if (heightIm == widthIm)
+            {
+                Console.WriteLine("Square Image");
+            }
+
+
+        }
